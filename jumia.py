@@ -30,11 +30,12 @@ for x in range (1, 51):
         print(len(device_list), 'devices extracted')   
         print('waiting 4 secs before next scrap...')
         
+        time.sleep(4)
         
         
      
 df = pd.DataFrame(device_list)
 print(df.tail())
-df.to_csv('jumia tablet deviced.csv')
+df.to_csv('jumia tablet devices.csv')
 
 
